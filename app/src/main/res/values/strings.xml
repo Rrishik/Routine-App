@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Routine-App</string>
+    <string name="loading">Signing you in ...</string>
 </resources>
