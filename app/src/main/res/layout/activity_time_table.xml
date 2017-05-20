@@ -16,7 +16,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/semester_time_table"
@@ -31,7 +30,6 @@
             android:background="@android:color/black" />
 
         <View
-            android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:visibility="invisible" />
@@ -46,7 +44,6 @@
                 android:textAlignment="center">
 
                 <TextView
-                    android:id="@+id/text00"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -55,7 +52,6 @@
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -64,7 +60,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text02"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -74,7 +69,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -83,7 +77,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text04"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -93,7 +86,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text05"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
@@ -101,7 +93,6 @@
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text06"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -111,7 +102,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text07"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -120,7 +110,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text08"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -135,7 +124,6 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/text10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -144,7 +132,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -152,14 +139,12 @@
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -167,14 +152,12 @@
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
@@ -183,14 +166,12 @@
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -198,7 +179,6 @@
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -210,7 +190,6 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/text20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -220,29 +199,12 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@android:color/white"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:id="@+id/text23"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:id="@+id/text24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -250,14 +212,25 @@
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:textAlignment="center" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
                     android:text=" " />
 
                 <TextView
-                    android:id="@+id/text26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -265,14 +238,12 @@
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text27"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text28"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -285,7 +256,6 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/text30"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -294,7 +264,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -302,14 +271,12 @@
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -317,14 +284,12 @@
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text34"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
@@ -332,14 +297,12 @@
                     android:text=" " />
 
                 <TextView
-                    android:id="@+id/text36"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text37"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -347,7 +310,6 @@
                     android:textAlignment="center" />
 
                 <TextView
-                    android:id="@+id/text38"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -356,13 +318,11 @@
         </TableLayout>
 
         <View
-            android:id="@+id/view1"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:visibility="invisible" />
 
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Attendance Log :"
@@ -370,7 +330,6 @@
             android:textSize="15dp" />
 
         <TextView
-            android:id="@+id/texts1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
@@ -383,31 +342,26 @@
             />
 
         <TextView
-            android:id="@+id/texts2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
         <TextView
-            android:id="@+id/texts3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
         <TextView
-            android:id="@+id/texts4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
         <TextView
-            android:id="@+id/texts5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
         <Button
-            android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Button" />
