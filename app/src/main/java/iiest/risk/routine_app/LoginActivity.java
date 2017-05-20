@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -110,8 +111,10 @@ public class LoginActivity extends AppCompatActivity implements
 
     private void updateUI(boolean b, String actNm) {
         if (b) {
-            Log.d(TAG, "updateUI: Login Success " + actNm);
-            mUserView.setText(actNm);
+            Toast.makeText(LoginActivity.this, "Logged in as: " + actNm, Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+            LoginActivity.this.finish();
+            startActivity(intent);
         } else {
             Log.d(TAG, "updateUI: Login Failiure");
             mUserView.setText("Not logged in");

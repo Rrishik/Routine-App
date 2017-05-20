@@ -1,8 +1,12 @@
 package iiest.risk.routine_app.fragments;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.jjoe64.graphview.GraphView;
@@ -15,14 +19,19 @@ import java.io.InputStreamReader;
 
 import iiest.risk.routine_app.R;
 
-public class timeTable extends AppCompatActivity {
+public class TimeTable extends Fragment {
+
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_time_table, container, false);
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_time_table);
-
-        GraphView graph = (GraphView) findViewById(R.id.graphs1);
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        GraphView graph = (GraphView) getView().findViewById(R.id.graphs1);
         int percent = 0;
         int i = 0;
         LineGraphSeries<DataPoint> series = new LineGraphSeries<>();
@@ -34,9 +43,9 @@ public class timeTable extends AppCompatActivity {
             series.appendData(new DataPoint(x, y), true, size);
         }
         graph.addSeries(series);
-        Context context = this;
+
         try {
-            readFromAssets(context, "tt.txt");
+            readFromAssets(getActivity(), "tt.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -62,8 +71,8 @@ public class timeTable extends AppCompatActivity {
             } else {
                 s = mLine.substring(3, 5);
             }
-            resId = getResources().getIdentifier(p, "id", getPackageName());
-            TextView t = (TextView) findViewById(resId);
+            resId = getResources().getIdentifier(p, "id", getActivity().getPackageName());
+            TextView t = (TextView) getActivity().findViewById(resId);
             t.setText(s);
             mLine = reader.readLine();
         }

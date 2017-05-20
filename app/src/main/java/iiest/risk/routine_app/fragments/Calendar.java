@@ -1,8 +1,12 @@
 package iiest.risk.routine_app.fragments;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -11,7 +15,7 @@ import java.io.InputStreamReader;
 
 import iiest.risk.routine_app.R;
 
-public class Calendar extends AppCompatActivity {
+public class Calendar extends Fragment {
 
     public static String readFromAssets(Context context, String filename) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(context.getAssets().open(filename)));
@@ -26,13 +30,18 @@ public class Calendar extends AppCompatActivity {
         return sb.toString();
     }
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendar);
-        TextView tv = (TextView) findViewById(R.id.textView3);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_calendar, container, false);
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        TextView tv = (TextView) getActivity().findViewById(R.id.textView3);
         String str = "";
-        Context context = this;
+        Context context = getActivity();
         try {
             str = readFromAssets(context, "dates.txt");
             tv.setText(str);
